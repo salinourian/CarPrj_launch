@@ -135,7 +135,7 @@
 
       constraints:
         # vehicle slows down under longitudinal constraints
-        use_constraints_for_decel: false                # [-]
+        use_constraints_for_decel: true                 # [-]
 
         # lateral constraints
         lateral:
