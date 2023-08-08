@@ -175,10 +175,13 @@
         max_distance: 20.0                              # [m]
         stop_buffer: 1.0                                # [m]
 
-      constraints:
+      policy:
         # vehicle slows down under longitudinal constraints
         use_constraints_for_decel: true                 # [-]
+        # module always outputs avoidance path by best effort margin.
+        use_relaxed_margin_immediately: true            # [-]
 
+      constraints:
         # lateral constraints
         lateral:
           velocity: [1.0, 1.38, 11.1]                   # [m/s]
